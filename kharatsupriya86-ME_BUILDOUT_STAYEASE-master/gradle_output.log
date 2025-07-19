@@ -1,0 +1,81 @@
+Starting a Gradle Daemon, 1 stopped Daemon could not be reused, use --status for details
+
+> Task :compileJava
+/home/crio-user/workspace/kharatsupriya86-ME_BUILDOUT_STAYEASE/src/main/java/com/takehome/stayease/entity/Hotel.java:42: warning: @Builder will ignore the initializing expression entirely. If you want the initializing expression to serve as default, add @Builder.Default. If it is not supposed to be settable during building, make the field final.
+    List<Booking> bookings = new ArrayList<>();
+                  ^
+/home/crio-user/workspace/kharatsupriya86-ME_BUILDOUT_STAYEASE/src/main/java/com/takehome/stayease/entity/User.java:40: warning: @Builder will ignore the initializing expression entirely. If you want the initializing expression to serve as default, add @Builder.Default. If it is not supposed to be settable during building, make the field final.
+    RoleEnum role = RoleEnum.USER;
+             ^
+/home/crio-user/workspace/kharatsupriya86-ME_BUILDOUT_STAYEASE/src/main/java/com/takehome/stayease/entity/User.java:44: warning: @Builder will ignore the initializing expression entirely. If you want the initializing expression to serve as default, add @Builder.Default. If it is not supposed to be settable during building, make the field final.
+    List<Booking> bookings = new ArrayList<>();
+                  ^
+3 warnings
+
+> Task :processResources
+> Task :classes
+> Task :resolveMainClassName
+
+> Task :bootRun
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.3.3)
+
+2025-06-14T20:29:47.448+05:30  INFO 10359 --- [stayease] [  restartedMain] c.takehome.stayease.StayeaseApplication  : Starting StayeaseApplication using Java 17.0.7 with PID 10359 (/tmp/gradle_builds/stayease/stayease/classes/java/main started by crio-user in /home/crio-user/workspace/kharatsupriya86-ME_BUILDOUT_STAYEASE)
+2025-06-14T20:29:47.457+05:30  INFO 10359 --- [stayease] [  restartedMain] c.takehome.stayease.StayeaseApplication  : No active profile set, falling back to 1 default profile: "default"
+2025-06-14T20:29:47.584+05:30  INFO 10359 --- [stayease] [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-06-14T20:29:47.587+05:30  INFO 10359 --- [stayease] [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-06-14T20:29:48.765+05:30  INFO 10359 --- [stayease] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-14T20:29:48.879+05:30  INFO 10359 --- [stayease] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 83 ms. Found 3 JPA repository interfaces.
+2025-06-14T20:29:49.767+05:30  INFO 10359 --- [stayease] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-06-14T20:29:49.784+05:30  INFO 10359 --- [stayease] [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-14T20:29:49.784+05:30  INFO 10359 --- [stayease] [  restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2025-06-14T20:29:49.839+05:30  INFO 10359 --- [stayease] [  restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-06-14T20:29:49.841+05:30  INFO 10359 --- [stayease] [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2249 ms
+2025-06-14T20:29:50.028+05:30  INFO 10359 --- [stayease] [  restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-14T20:29:50.087+05:30  INFO 10359 --- [stayease] [  restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2025-06-14T20:29:50.127+05:30  INFO 10359 --- [stayease] [  restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-06-14T20:29:50.580+05:30  INFO 10359 --- [stayease] [  restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-14T20:29:50.615+05:30  INFO 10359 --- [stayease] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-06-14T20:29:51.068+05:30  INFO 10359 --- [stayease] [  restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@35b2fa4
+2025-06-14T20:29:51.071+05:30  INFO 10359 --- [stayease] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-06-14T20:29:51.155+05:30  WARN 10359 --- [stayease] [  restartedMain] org.hibernate.dialect.Dialect            : HHH000511: The 5.7.42 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2025-06-14T20:29:52.504+05:30  INFO 10359 --- [stayease] [  restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-14T20:29:52.585+05:30  INFO 10359 --- [stayease] [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-14T20:29:53.127+05:30  INFO 10359 --- [stayease] [  restartedMain] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2025-06-14T20:29:53.128+05:30  WARN 10359 --- [stayease] [  restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2025-06-14T20:29:53.298+05:30  WARN 10359 --- [stayease] [  restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-06-14T20:29:54.262+05:30  INFO 10359 --- [stayease] [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-06-14T20:29:54.312+05:30  INFO 10359 --- [stayease] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2025-06-14T20:29:54.330+05:30  INFO 10359 --- [stayease] [  restartedMain] c.takehome.stayease.StayeaseApplication  : Started StayeaseApplication in 7.406 seconds (process running for 8.301)
+2025-06-14T20:29:54.824+05:30  INFO 10359 --- [stayease] [nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-14T20:29:54.824+05:30  INFO 10359 --- [stayease] [nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-06-14T20:29:54.826+05:30  INFO 10359 --- [stayease] [nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-06-14T20:29:55.009+05:30  INFO 10359 --- [stayease] [nio-8081-exec-1] c.takehome.stayease.service.AuthService  : Thread: http-nio-8081-exec-1, signup dto: SignupDto(email=customer.a65979cb-058b-481e-a022-ef6aef0f0310@test.com, password=Test@123!, firstName=Test, lastName=Customer, role=USER)
+2025-06-14T20:29:55.293+05:30  INFO 10359 --- [stayease] [nio-8081-exec-1] c.takehome.stayease.service.AuthService  : Thread: http-nio-8081-exec-1, User signup successful: ID 1, EMAIL: customer.a65979cb-058b-481e-a022-ef6aef0f0310@test.com
+2025-06-14T20:29:55.357+05:30  INFO 10359 --- [stayease] [nio-8081-exec-3] c.takehome.stayease.service.AuthService  : Thread: http-nio-8081-exec-3, signup dto: SignupDto(email=manager.371ffff3-fd18-4ae0-8088-f7c1683f1dac@test.com, password=Manager@123!, firstName=Test, lastName=Manager, role=HOTEL_MANAGER)
+2025-06-14T20:29:55.385+05:30  INFO 10359 --- [stayease] [nio-8081-exec-3] c.takehome.stayease.service.AuthService  : Thread: http-nio-8081-exec-3, User signup successful: ID 2, EMAIL: manager.371ffff3-fd18-4ae0-8088-f7c1683f1dac@test.com
+2025-06-14T20:29:55.397+05:30  INFO 10359 --- [stayease] [nio-8081-exec-5] c.takehome.stayease.service.AuthService  : Thread: http-nio-8081-exec-5, signup dto: SignupDto(email=admin.b29a482a-8d02-4a5d-8fb2-4c37f916f7db@test.com, password=Admin@123!, firstName=Test, lastName=Admin, role=ADMIN)
+2025-06-14T20:29:55.426+05:30  INFO 10359 --- [stayease] [nio-8081-exec-5] c.takehome.stayease.service.AuthService  : Thread: http-nio-8081-exec-5, User signup successful: ID 3, EMAIL: admin.b29a482a-8d02-4a5d-8fb2-4c37f916f7db@test.com
+2025-06-14T20:29:55.442+05:30  WARN 10359 --- [stayease] [nio-8081-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.takehome.stayease.exception.custom_exception.BadPasswordException: Invalid password]
+2025-06-14T20:29:55.461+05:30  WARN 10359 --- [stayease] [nio-8081-exec-7] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<?> com.takehome.stayease.controller.AuthController.signup(com.takehome.stayease.dto.SignupDto): [Field error in object 'signupDto' on field 'email': rejected value [invalid-email]; codes [Email.signupDto.email,Email.email,Email.java.lang.String,Email]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [signupDto.email,email]; arguments []; default message [email],[Ljakarta.validation.constraints.Pattern$Flag;@5f5770b2,.*]; default message [Invalid email]] ]
+2025-06-14T20:29:55.476+05:30  INFO 10359 --- [stayease] [nio-8081-exec-8] c.takehome.stayease.service.AuthService  : Thread: http-nio-8081-exec-8, Trying login User: LoginDto(email=customer.a65979cb-058b-481e-a022-ef6aef0f0310@test.com, password=Test@123!)
+2025-06-14T20:29:55.655+05:30  INFO 10359 --- [stayease] [nio-8081-exec-8] c.takehome.stayease.service.AuthService  : Thread: http-nio-8081-exec-8, User logged in successfully: LoginDto(email=customer.a65979cb-058b-481e-a022-ef6aef0f0310@test.com, password=Test@123!)
+2025-06-14T20:29:55.668+05:30  INFO 10359 --- [stayease] [io-8081-exec-10] c.takehome.stayease.service.AuthService  : Thread: http-nio-8081-exec-10, Trying login User: LoginDto(email=customer.a65979cb-058b-481e-a022-ef6aef0f0310@test.com, password=wrongpassword)
+2025-06-14T20:29:55.695+05:30  INFO 10359 --- [stayease] [io-8081-exec-10] c.takehome.stayease.service.AuthService  : Thread: http-nio-8081-exec-10, User login failed, due to Bad Credentials: LoginDto(email=customer.a65979cb-058b-481e-a022-ef6aef0f0310@test.com, password=wrongpassword), error: Bad credentials
+2025-06-14T20:29:55.698+05:30  WARN 10359 --- [stayease] [io-8081-exec-10] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.takehome.stayease.exception.custom_exception.InvalidCredException: Invalid email or password]
+2025-06-14T20:29:55.716+05:30  INFO 10359 --- [stayease] [nio-8081-exec-3] c.t.stayease.service.HotelService        : Thread: http-nio-8081-exec-3, USER : anonymousUser, GetAllHotels
+2025-06-14T20:29:55.872+05:30  INFO 10359 --- [stayease] [nio-8081-exec-6] c.t.stayease.service.HotelService        : Thread: http-nio-8081-exec-6, USER : admin.b29a482a-8d02-4a5d-8fb2-4c37f916f7db@test.com, trying Create hotel: CreateHotelDto(name=Test Hotel ddbf8d88-73e9-44ef-a104-f6d748b093aa, location=Test Location, description=Test Description, totalRooms=0, availableRooms=10)
+2025-06-14T20:29:55.874+05:30  INFO 10359 --- [stayease] [nio-8081-exec-6] c.t.stayease.service.HotelService        : Thread: http-nio-8081-exec-6, USER : admin.b29a482a-8d02-4a5d-8fb2-4c37f916f7db@test.com, Create hotel successful: CreateHotelDto(name=Test Hotel ddbf8d88-73e9-44ef-a104-f6d748b093aa, location=Test Location, description=Test Description, totalRooms=0, availableRooms=10)
+2025-06-14T20:29:55.930+05:30  WARN 10359 --- [stayease] [nio-8081-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.security.authorization.AuthorizationDeniedException: Access Denied]
+2025-06-14T20:29:56.073+05:30  WARN 10359 --- [stayease] [nio-8081-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.security.authorization.AuthorizationDeniedException: Access Denied]
+2025-06-14T20:29:56.092+05:30  INFO 10359 --- [stayease] [nio-8081-exec-6] c.t.stayease.service.HotelService        : Thread: http-nio-8081-exec-6, USER : admin.b29a482a-8d02-4a5d-8fb2-4c37f916f7db@test.com, trying Create hotel: CreateHotelDto(name=Limited Rooms Hotel 1749913194.741554, location=Test Location, description=Hotel with limited availability for testing, totalRooms=1, availableRooms=1)
+2025-06-14T20:29:56.093+05:30  INFO 10359 --- [stayease] [nio-8081-exec-6] c.t.stayease.service.HotelService        : Thread: http-nio-8081-exec-6, USER : admin.b29a482a-8d02-4a5d-8fb2-4c37f916f7db@test.com, Create hotel successful: CreateHotelDto(name=Limited Rooms Hotel 1749913194.741554, location=Test Location, description=Hotel with limited availability for testing, totalRooms=1, availableRooms=1)
+2025-06-14T20:29:56.259+05:30  WARN 10359 --- [stayease] [nio-8081-exec-8] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.takehome.stayease.exception.custom_exception.NotFoundException: No rooms available]
+2025-06-14T20:29:56.398+05:30  WARN 10359 --- [stayease] [nio-8081-exec-6] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.security.authorization.AuthorizationDeniedException: Access Denied]
